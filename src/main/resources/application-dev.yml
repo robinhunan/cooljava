@@ -35,9 +35,9 @@ spring:
    #1.JDBC
    type: com.alibaba.druid.pool.DruidDataSource
    driver-class-name: com.mysql.jdbc.Driver
-   url: jdbc:mysql://mysql.local:3306/cooljava?useSSL=false&useUnicode=true&characterEncoding=utf8
-   username: shengchao
-   password: 1232008qwe
+   url: jdbc:mysql://db2:3306/cooljava?useSSL=false&useUnicode=true&characterEncoding=utf8
+   username: yubing
+   password: 123qwe
    druid:
      initial-size: 1
      #min-idle: 5

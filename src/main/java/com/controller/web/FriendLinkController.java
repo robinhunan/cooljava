@@ -8,6 +8,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.util.DateUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -152,7 +153,8 @@ public class FriendLinkController {
 		{
 			//设置默认值
 			friendLink.setDispos("首页");
-			friendLink.setAddtime(new Date());
+			String addDate = DateUtil.Date2Stirng(new Date());
+			friendLink.setAddtime(addDate);
 			friendLinkService.save(friendLink);
 			result = "0";
 		} catch (Exception e) 

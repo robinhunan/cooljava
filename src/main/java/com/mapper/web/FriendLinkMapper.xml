@@ -99,8 +99,7 @@
 	</insert>
   
   	<update id="update">
-		UPDATE web_flink SET 	
-			<if test="id != null and id != '' and dbName == 'mysql'">id = #{id},</if>
+		UPDATE web_flink SET
 			<if test="webname != null and webname != ''">webname = #{webname},</if>
 			<if test="alink != null and alink != ''">alink = #{alink},</if>
 			<if test="email != null and email != ''">email = #{email},</if>

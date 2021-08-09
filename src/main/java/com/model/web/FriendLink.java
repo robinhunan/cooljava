@@ -11,7 +11,7 @@ public class FriendLink extends PageDto{
 	private String email;
 	private String dispos;
 	private String content;
-	private Date addtime;
+	private String addtime;
 	private String timeF;
 	
 	public String getWebname() {
@@ -44,26 +44,13 @@ public class FriendLink extends PageDto{
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public Date getAddtime() {
+	public String getAddtime() {
 		return addtime;
 	}
-	public void setAddtime(Date addtime) {
+	public void setAddtime(String addtime) {
 		this.addtime = addtime;
 	}
-	/**
-	 * 时间格式化
-	 * @return
-	 */
-	public String getTimeF() {
-	 if(this.getAddtime() != null){
-            return DateUtil.Date2Stirng2Second(addtime);
-        }
-        return "";
-	}
-	
-	public void setTimeF(String timeF) {
-		this.timeF = timeF;
-	}
+
 	
 	
 }
